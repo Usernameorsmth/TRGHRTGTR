@@ -1,27 +1,44 @@
+Okay, here is the code retyped exactly as it appears in the image:
+
+HTML
+
 <!DOCTYPE html>
 <html>
 <head>
 </head>
 <body>
 
-  <h2>JavaScript String Methods</h2>
-  <p>Basic Methods</p>
-  <script>
-    var str = "AmAzInG";
-    document.write(str.toUpperCase());
-    document.write("<br>");
-    document.write(str.toLowerCase());
-    document.write("<br>");
-    document.write(str.startsWith('1'));
-    document.write("<br>");
+<p id="demo"></p>
 
-    // Test Method -> returns true or false
-    var str1 = "I learnt about Methods"; 
-    var patt = new RegExp("about");
-    var res = patt.test(str1);
-    document.write(res); 
+<script>
+var day;
 
-  </script>
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+document.getElementById("demo").innerHTML = "Today is " + day;
+
+</script>
 
 </body>
 </html>
